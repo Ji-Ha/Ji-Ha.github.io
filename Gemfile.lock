@@ -177,6 +177,7 @@ DEPENDENCIES
   html-proofer (~> 4.4)
   jekyll (~> 4.3.2)
   jekyll-archives
+  jekyll-include-cache
   jekyll-paginate
   jekyll-redirect-from
   jekyll-seo-tag
