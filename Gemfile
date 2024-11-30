@@ -12,3 +12,5 @@ platforms :mingw, :x64_mingw, :mswin, :jruby do
 end
 
 gem "wdm", "~> 0.2.0", :platforms => [:mingw, :x64_mingw, :mswin]
+
+gem 'sass-embedded', '~> 1.69.5'  # 최신 버전으로 업데이트
