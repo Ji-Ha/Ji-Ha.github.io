@@ -1,18 +1,14 @@
+# frozen_string_literal: true
+
 source "https://rubygems.org"
 
-gem "jekyll", "~> 4.3.2"
-gem "jekyll-theme-chirpy", "~> 6.3.1"  # 최신 버전으로 수정
+gem "jekyll-theme-chirpy", "~> 7.2"
 
-group :test do
-  gem "html-proofer", "~> 4.4"
+gem "html-proofer", "~> 5.0", group: :test
+
+platforms :mingw, :x64_mingw, :mswin, :jruby do
+  gem "tzinfo", ">= 1", "< 3"
+  gem "tzinfo-data"
 end
 
-# Jekyll 플러그인
-group :jekyll_plugins do
-  gem "jekyll-paginate"
-  gem "jekyll-redirect-from"
-  gem "jekyll-seo-tag"
-  gem "jekyll-archives"
-  gem "jekyll-sitemap"
-  gem "jekyll-include-cache"  # 이 줄 추가
-end
+gem "wdm", "~> 0.2.0", :platforms => [:mingw, :x64_mingw, :mswin]
